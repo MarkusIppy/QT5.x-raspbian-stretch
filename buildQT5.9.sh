@@ -18,6 +18,11 @@ tar xf qt-everywhere-opensource-src-5.9.2.tar.xz
 # Delete source tarball to save some space
 sudo rm -r qt-everywhere-opensource-src-5.9.2.tar.xz
 
+# Download modified qmake.conf for Raspberry Pi2 and overwrite old qmake.conf
+wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/qmakepi2.conf
+sudo cp /home/pi/qmakepi2.conf /home/pi/qt-everywhere-opensource-src-5.9.2\qtbase\mkspecs\devices\linux-rasp-pi2-g++/qmake.conf
+
+
 # Create Shadow build directory 
 mkdir build
 cd build

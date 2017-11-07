@@ -30,6 +30,9 @@ cd
 mkdir build
 cd build
 
+# create and Change ownership of QT5.9 install folder
+sudo mkdir /opt/Qt5.9
+sudo chown pi:pi /opt/Qt5.9
 
 # Configure QT for Raspberry PI2 ARMv7
 PKG_CONFIG_LIBDIR=/usr/lib/arm-linux-gnueabihf/pkgconfig PKG_CONFIG_SYSROOT_DIR=/ \../qt-everywhere-opensource-src-5.9.2/configure -v -opengl es2 -eglfs -no-gtk -device linux-rasp-pi2-g++ \-device-option CROSS_COMPILE=/usr/bin/ -opensource -confirm-license -reduce-exports \-force-pkg-config -nomake examples -no-compile-examples -skip qtwayland -skip qtwebengine -release \-qt-pcre -ssl -evdev -system-freetype -fontconfig -glib -prefix /opt/Qt5.9

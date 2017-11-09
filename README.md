@@ -271,3 +271,17 @@ export PATH=/opt/Qt5.9/bin:$PATH
 ```
 
 Happy coding :-)
+
+
+Should QT not install properly you can run the fixqtinstall.sh script. This will run make and make install in every qt module again to ensure it is properly installed.
+
+```
+$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/fixqtinstall.sh
+```
+```
+$sudo chmod +x fixqtinstall.sh
+```
+```
+$./fixqtinstall.sh
+```
+

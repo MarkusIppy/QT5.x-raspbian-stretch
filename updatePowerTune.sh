@@ -3,12 +3,13 @@ set -x #echo on
 
 # Update PowerTune source code on the PI
 echo "Update Source Code"
-git pull https://github.com/BastianGschrey/PowerTune.git
+cd /home/pi/PowerTune
+git pull
 
 
 # CD to the build output directory
 echo "Enter installation directory"
-cd /opt/PowerTuneQMLGui
+cd /opt/PowerTune
 
 # Call qmake referencing the .pro file
 echo "Executing qmake"

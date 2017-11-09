@@ -10,7 +10,7 @@ sudo apt-get -y --force-yes install libatspi-dev build-essential libfontconfig1-
 
 
 # Download QT 5.8 Source code
-wget http://download.qt.io/official_releases/qt/5.9/5.9.2/single/qt-everywhere-opensource-src-5.8.0.tar.xz
+wget http://download.qt.io/official_releases/qt/5.8/5.8.0/single/qt-everywhere-opensource-src-5.8.0.tar.xz
 
 # Untar Source code
 tar xf qt-everywhere-opensource-src-5.8.0.tar.xz

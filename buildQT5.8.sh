@@ -23,8 +23,9 @@ sudo rm -r qt-everywhere-opensource-src-5.8.0.tar.xz
 cd /home/pi/qt-everywhere-opensource-src-5.8.0/qtbase/mkspecs/devices/linux-rasp-pi2-g++
 sudo rm qmake.conf
 
-# Download modified qmake.conf for Raspberry Pi2
-wget https://github.com/MarkusIppy/QT5.x-raspbian-stretch/qmake.conf
+# Copy modified qmake.conf for Raspberry Pi2
+cd /home/pi/QT5.x-raspbian-stretch      
+sudo cp qmake.conf /home/pi/qt-everywhere-opensource-src-5.8.0/qtbase/mkspecs/devices/linux-rasp-pi2-g++
 
 # Create Shadow build directory 
 cd

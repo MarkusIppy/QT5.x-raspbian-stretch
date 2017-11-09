@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd /home/pi/build/qtbase
 make -j4
 sudo make install

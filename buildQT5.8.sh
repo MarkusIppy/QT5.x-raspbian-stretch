@@ -45,6 +45,10 @@ make -j4
 # Install QT on the system 
 sudo make install
 
+# Add enviroment variables to bashrc
+echo 'export LD_LIBRARY_PATH=/opt/Qt5.8/lib' >> ~/.bashrc 
+echo  'export PATH=/opt/Qt5.8/bin:$PATH' >> ~/.bashrc 
+
 # Delete shadow build directory
 #cd
 #sudo rm -r build

@@ -54,7 +54,7 @@ $sudo chmod +x buildQT5.9.2.sh
 $./buildQT5.9.2.sh
 ```
 
-Your output should look as follows :
+Your output should look as follows (example QT5.9.2) :
 
 ```
 Configure summary:

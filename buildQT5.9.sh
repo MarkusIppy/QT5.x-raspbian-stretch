@@ -45,12 +45,17 @@ make -j4
 # Install QT on the system 
 make install
 
+
+# Add enviroment variables to bashrc
+echo 'export LD_LIBRARY_PATH=/opt/Qt5.9/lib' >> ~/.bashrc 
+echo  'export PATH=/opt/Qt5.9/bin:$PATH' >> ~/.bashrc 
+
 # Delete shadow build directory
-cd
-sudo rm -r build
+#cd
+#sudo rm -r build
 
 # Delete source code folder
-sudo rm -r qt-everywhere-opensource-src-5.9.2
+#sudo rm -r qt-everywhere-opensource-src-5.9.2
 
 
 

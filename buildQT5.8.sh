@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd
 # Install QT5.8 on rasbian stretch 
 
 sudo apt-get -y --force-yes update

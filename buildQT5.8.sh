@@ -10,7 +10,8 @@ sudo apt-get -y --force-yes install libatspi-dev build-essential libfontconfig1-
 
 
 # Download QT 5.8 Source code
-wget http://download.qt.io/official_releases/qt/5.8/5.8.0/single/qt-everywhere-opensource-src-5.8.0.tar.xz
+
+http://download.qt.io/official_releases/qt/5.8/5.8.0/single/qt-everywhere-opensource-src-5.8.0.tar.xz
 
 # Untar Source code
 tar xf qt-everywhere-opensource-src-5.8.0.tar.xz
@@ -23,7 +24,7 @@ cd /home/pi/qt-everywhere-opensource-src-5.8.0/qtbase/mkspecs/devices/linux-rasp
 sudo rm qmake.conf
 
 # Download modified qmake.conf for Raspberry Pi2
-wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/qmake.conf
+wget https://github.com/MarkusIppy/QT5.x-raspbian-stretch/qmake.conf
 
 # Create Shadow build directory 
 cd

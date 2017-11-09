@@ -24,14 +24,14 @@ $ sudo apt-get install git
 ```
 
 ```
-$ git clone
+$ git clone https://github.com/MarkusIppy/QT5.x-raspbian-stretch.git
+```
+```
+$ cd QT5.x-raspbian-stretch
 ```
 Dependent if you want to install QT5.8/5.9.1/5.9.2
 
 For QT5.8 :
-```
-$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/buildQT5.8.sh
-```
 ```
 $sudo chmod +x buildQT5.8.sh
 ```
@@ -42,9 +42,6 @@ $./buildQT5.8sh
 
 For QT5.9.1 :
 ```
-$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/buildQT5.9.1.sh
-```
-```
 $sudo chmod +x buildQT5.9.1.sh
 ```
 ```
@@ -52,9 +49,6 @@ $./buildQT5.9.1.sh
 ```
 
 For QT5.9.2 :
-```
-$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/buildQT5.9.2.sh
-```
 ```
 $sudo chmod +x buildQT5.9.2.sh
 ```

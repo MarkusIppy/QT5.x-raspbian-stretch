@@ -11,6 +11,32 @@ and install it on your SD card
 
 After booting up your PI, follw the steps below :
 
+Dependent if you want to install QT5.8/5.9.1/5.9.2
+
+For QT5.8 :
+```
+$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/buildQT5.8.sh
+```
+```
+$sudo chmod +x buildQT5.8.sh
+```
+```
+$./buildQT5.8sh
+```
+
+
+For QT5.9.1 :
+```
+$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/buildQT5.9.1.sh
+```
+```
+$sudo chmod +x buildQT5.9.1.sh
+```
+```
+$./buildQT5.9.1.sh
+```
+
+For QT5.9.2 :
 ```
 $wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/buildQT5.9.sh
 ```
@@ -227,3 +253,21 @@ Qt will be installed into '/opt/Qt5.9'.
 Prior to reconfiguration, make sure you remove any leftovers from
 the previous build.
 ```
+
+
+
+After QT has finished installing you need to add 2 lines to your bash.rc so qmake and the libraries will be found
+
+For QT5.8
+```
+export LD_LIBRARY_PATH=/opt/Qt5.8/lib
+export PATH=/opt/Qt5.8/bin:$PATH
+```
+For QT5.9.1 or QT5.9.2
+
+```
+export LD_LIBRARY_PATH=/opt/Qt5.9/lib
+export PATH=/opt/Qt5.9/bin:$PATH
+```
+
+Happy coding :-)

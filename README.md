@@ -1,4 +1,4 @@
-# QT5.9.2-raspbian-stretch
+# QT5.8 / QT5.9.1 / QT5.9.2 -raspbian-stretch
 
 Automated installation scripts to compile QT5.8 / 5.9.1 /5.9.2 on Raspbian Stretch for Raspberry PI with EGLFS support
 This whole process takes about 4-6 hours on a Raspberry Pi2. 
@@ -45,13 +45,13 @@ $./buildQT5.9.1.sh
 
 For QT5.9.2 :
 ```
-$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/buildQT5.9.sh
+$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/buildQT5.9.2.sh
 ```
 ```
-$sudo chmod +x buildQT5.9.sh
+$sudo chmod +x buildQT5.9.2.sh
 ```
 ```
-$./buildQT5.9.sh
+$./buildQT5.9.2.sh
 ```
 
 Your output should look as follows :

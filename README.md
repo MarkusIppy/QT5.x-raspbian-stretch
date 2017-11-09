@@ -16,8 +16,16 @@ After booting up your PI, follw the steps below :
 $ sudo raspi-config
 ```
 Set GPU to 256 and enable ssh (ssh is optional) 
+```
+$ sudo apt-get update
+```
+```
+$ sudo apt-get install git
+```
 
-
+```
+$ git clone
+```
 Dependent if you want to install QT5.8/5.9.1/5.9.2
 
 For QT5.8 :

@@ -1,4 +1,4 @@
-# QT5.8 / QT5.9.1 / QT5.9.2 -raspbian-stretch
+# QT5.8 / QT5.9.1 / QT5.9.2 -Raspbian-Stretch
 
 Automated installation scripts to compile QT5.8 / 5.9.1 /5.9.2 on Raspbian Stretch for Raspberry PI with EGLFS support
 This whole process takes about 4-6 hours on a Raspberry Pi2. 

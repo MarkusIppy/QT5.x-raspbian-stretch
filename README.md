@@ -7,9 +7,15 @@ The script is based on this tutorial http://www.tal.org/tutorials/building-qt-58
 Usage :
 Download raspbian Stretch from:
 https://www.raspberrypi.org/downloads/raspbian/
-and install it on your SD card
+and install it on your SD card (the lite version will be enough) 
 
 After booting up your PI, follw the steps below :
+
+```
+$ sudo raspi-config
+```
+Set GPU to 256 and enable ssh (ssh is optional) 
+
 
 Dependent if you want to install QT5.8/5.9.1/5.9.2
 
@@ -271,7 +277,6 @@ export PATH=/opt/Qt5.9/bin:$PATH
 ```
 
 Happy coding :-)
-
 
 Should QT not install properly you can run the fixqtinstall.sh script. This will run make and make install in every qt module again to ensure it is properly installed.
 

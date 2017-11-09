@@ -263,21 +263,6 @@ the previous build.
 
 
 
-After QT has finished installing you need to add 2 lines to your bash.rc so qmake and the libraries will be found
-
-For QT5.8
-```
-export LD_LIBRARY_PATH=/opt/Qt5.8/lib
-export PATH=/opt/Qt5.8/bin:$PATH
-```
-For QT5.9.1 or QT5.9.2
-
-```
-export LD_LIBRARY_PATH=/opt/Qt5.9/lib
-export PATH=/opt/Qt5.9/bin:$PATH
-```
-
-Happy coding :-)
 
 Should QT not install properly you can run the fixqtinstall.sh script. This will run make and make install in every qt module again to ensure it is properly installed.
 
@@ -291,3 +276,6 @@ $sudo chmod +x fixqtinstall.sh
 $./fixqtinstall.sh
 ```
 
+If everything is working you can delete the build folder as well as the source code folder 
+
+Happy coding :-)

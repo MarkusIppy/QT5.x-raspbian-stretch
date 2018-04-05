@@ -1,8 +1,8 @@
-# QT5.8 / QT5.9.1 / QT5.9.2 -Raspbian-Stretch
+# QT5.10.1 -Raspbian-Stretch
 
-Automated installation scripts to compile QT5.8 / 5.9.1 /5.9.2 on Raspbian Stretch for Raspberry PI with EGLFS support
+Automated installation scripts to compile QT5 on Raspbian Stretch for Raspberry PI with EGLFS support
 This whole process takes about 4-6 hours on a Raspberry Pi2. 
-This will compile for ARMV7 and will work on a Pi2 and Pi3
+Compile scripts for Pi2 (armV7) and Pi3 (armV8)
 The script is based on this tutorial http://www.tal.org/tutorials/building-qt-58-raspberry-pi-debian-stretch
 
 Usage :
@@ -29,34 +29,24 @@ $ git clone https://github.com/MarkusIppy/QT5.x-raspbian-stretch.git
 ```
 $ cd QT5.x-raspbian-stretch
 ```
-Dependent if you want to install QT5.8/5.9.1/5.9.2
+Dependent if you want to install for Pi2 or Pi3
 
-For QT5.8 :
+For Pi2 :
 ```
-$sudo chmod +x buildQT5.8.sh
-```
-```
-$./buildQT5.8sh
-```
-
-
-For QT5.9.1 :
-```
-$sudo chmod +x buildQT5.9.1.sh
+$sudo chmod +x Pi2buildQT5.10.1.sh
 ```
 ```
-$./buildQT5.9.1.sh
+$./Pi2buildQT5.10.1.sh
 ```
 
-For QT5.9.2 :
-```
-$sudo chmod +x buildQT5.9.2.sh
-```
-```
-$./buildQT5.9.2.sh
-```
 
-Your output should look as follows (example QT5.9.2) :
+For Pi3 :
+```
+$sudo chmod +x Pi3buildQT5.10.1.sh
+```
+```
+$./Pi3buildQT5.10.1.sh
+```
 
 ```
 Configure summary:
@@ -265,18 +255,6 @@ the previous build.
 
 
 
-
-Should QT not install properly you can run the fixqtinstall.sh script. This will run make and make install in every qt module again to ensure it is properly installed.
-
-```
-$wget https://github.com/MarkusIppy/QT5.9.2-raspbian-stretch/blob/master/fixqtinstall.sh
-```
-```
-$sudo chmod +x fixqtinstall.sh
-```
-```
-$./fixqtinstall.sh
-```
 
 If everything is working you can delete the build folder as well as the source code folder 
 

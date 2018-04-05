@@ -18,12 +18,12 @@ tar xf qt-everywhere-src-5.10.1.tar.xz
 sudo rm -r qt-everywhere-src-5.10.1.tar.xz
 
 # Delete qmake.conf for Raspberry Pi2
-cd /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi2-g++
-sudo rm qmake.conf
+#cd /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi2-g++
+#sudo rm qmake.conf
 
 # Download modified qmake.conf for Raspberry Pi2
-cd /home/pi/QT5.x-raspbian-stretch/qmakePi2
-sudo cp qmake.conf /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi2-g++
+#cd /home/pi/QT5.x-raspbian-stretch/qmakePi2
+#sudo cp qmake.conf /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi2-g++
 
 # Create Shadow build directory 
 cd

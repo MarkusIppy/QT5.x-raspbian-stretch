@@ -18,12 +18,12 @@ tar xf qt-everywhere-src-5.10.1.tar.xz
 sudo rm -r qt-everywhere-src-5.10.1.tar.xz
 
 # Delete qmake.conf for Raspberry Pi3
-#cd /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi3-g++
-#sudo rm qmake.conf
+cd /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi3-g++
+sudo rm qmake.conf
 
 # Download modified qmake.conf for Raspberry Pi3
-#cd /home/pi/QT5.x-raspbian-stretch/qmakePi3
-#sudo cp qmake.conf /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi3-g++
+cd /home/pi/QT5.x-raspbian-stretch/qmakePi3
+sudo cp qmake.conf /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi3-g++
 
 # Create Shadow build directory 
 cd
@@ -43,7 +43,7 @@ make -j4
 
 
 # Install QT on the system 
-make install
+sudo make install
 
 
 # Add enviroment variables to bashrc

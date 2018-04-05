@@ -6,7 +6,8 @@ sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
 
 # Install needed packages
-sudo apt-get -y --force-yes install sense-hat libatspi-dev build-essential libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev libinput-dev libxkbcommon-dev libsqlite3-dev libssl1.0-dev libpng-dev libjpeg-dev libglib2.0-dev libraspberrypi-dev bluez libbluetooth-dev libasound2-dev pulseaudio libpulse-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-pulseaudio gstreamer1.0-tools gstreamer0.10-alsa gstreamer1.0-alsa gstreamer-tools libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev  gstreamer0.10-plugins-good gstreamer0.10-plugins-bad libraspberrypi-dev libpulse-devlibpq-dev libmariadbclient-dev
+sudo apt-get install sense-hat libatspi-dev build-essential libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev libinput-dev libxkbcommon-dev libsqlite3-dev libssl1.0-dev libpng-dev libjpeg-dev libglib2.0-dev libraspberrypi-dev bluez libbluetooth-dev libasound2-dev pulseaudio libpulse-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-bad gstreamer1.0-pulseaudio gstreamer1.0-tools gstreamer0.10-alsa gstreamer1.0-alsa gstreamer-tools libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libraspberrypi-dev libmariadbclient-dev
+
 
 # Download QT 5.10.1 Source code
 wget http://download.qt.io/official_releases/qt/5.10/5.10.1/single/qt-everywhere-src-5.10.1.tar.xz

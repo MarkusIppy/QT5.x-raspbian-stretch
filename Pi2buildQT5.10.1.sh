@@ -2,8 +2,8 @@
 
 # Install QT5.10.1 on rasbian stretch 
 cd
-sudo apt-get -y --force-yes update
-sudo apt-get -y --force-yes upgrade
+sudo apt-get update
+sudo apt-get upgrade
 
 # Install needed packages
 sudo apt-get install sense-hat libatspi-dev build-essential libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev libinput-dev libxkbcommon-dev libsqlite3-dev libssl-dev libpng-dev libjpeg-dev libglib2.0-dev libraspberrypi-dev

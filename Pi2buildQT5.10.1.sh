@@ -6,8 +6,10 @@ sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
 
 # Install needed packages
-sudo apt-get install sense-hat libatspi-dev build-essential libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev libinput-dev libxkbcommon-dev libsqlite3-dev libssl1.0-dev libpng-dev libjpeg-dev libglib2.0-dev libraspberrypi-dev bluez libbluetooth-dev libasound2-dev pulseaudio libpulse-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-bad gstreamer1.0-pulseaudio gstreamer1.0-tools gstreamer0.10-alsa gstreamer1.0-alsa gstreamer-tools libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libraspberrypi-dev libmariadbclient-dev
-
+sudo apt-get install sense-hat libatspi-dev build-essential libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev libinput-dev libxkbcommon-dev libsqlite3-dev libssl-dev libpng-dev libjpeg-dev libglib2.0-dev libraspberrypi-dev
+sudo apt-get install bluez libbluetooth-dev
+sudo apt-get install libasound2-dev pulseaudio libpulse-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-pulseaudio gstreamer1.0-tools gstreamer1.0-alsa gstreamer-tools
+sudo apt-get install libpq-dev libmariadbclient-dev
 
 # Download QT 5.10.1 Source code
 wget http://download.qt.io/official_releases/qt/5.10/5.10.1/single/qt-everywhere-src-5.10.1.tar.xz
@@ -19,12 +21,12 @@ tar xf qt-everywhere-src-5.10.1.tar.xz
 sudo rm -r qt-everywhere-src-5.10.1.tar.xz
 
 # Delete qmake.conf for Raspberry Pi2
-#cd /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi2-g++
-#sudo rm qmake.conf
+cd /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi2-g++
+sudo rm qmake.conf
 
 # Download modified qmake.conf for Raspberry Pi2
-#cd /home/pi/QT5.x-raspbian-stretch/qmakePi2
-#sudo cp qmake.conf /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi2-g++
+cd /home/pi/QT5.x-raspbian-stretch/qmakePi2
+sudo cp qmake.conf /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi2-g++
 
 # Create Shadow build directory 
 cd

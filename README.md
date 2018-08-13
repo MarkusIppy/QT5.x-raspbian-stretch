@@ -12,6 +12,22 @@ and install it on your SD card (the lite version will be enough)
 
 After booting up your PI, follw the steps below :
 
+
+Increase Rpi's swap size. As root, edit the file /etc/dphys-swapfile and modify the variable CONF_SWAPSIZE
+```
+CONF_SWAPSIZE=2048
+```
+
+Run dphys-swapfile setup which will create and initialize the file.
+
+```
+$ sudo dphys-swapfile swapon
+```
+
+Source : https://wpitchoune.net/tricks/raspberry_pi3_increase_swap_size.html
+
+After increasing the swap size,
+
 ```
 $ sudo raspi-config
 ```
